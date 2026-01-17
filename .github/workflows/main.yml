@@ -25,6 +25,11 @@ jobs:
           channel: 'stable'
           architecture: x64
 
+      # .env ফাইল এবং মিসিং ফোল্ডারগুলো তৈরি করা (Error ফিক্স করার জন্য)
+      - name: Prepare missing files & assets
+        run: |
+          touch .env
+
       - run: flutter build apk --release --split-per-abi
       - run: |
           flutter build ios --no-codesign
