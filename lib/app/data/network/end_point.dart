@@ -5,5 +5,5 @@ class EndPoint {
 
   final apiUrl = dotenv.env['API_URL'];
 
-  static const String apiKey = 'AIzaSyChTmxG_4Md8-X8eXMSN6TrQ5-HtcKk-OE';
+  static const String apiKey = '';
 }
