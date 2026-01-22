@@ -14,6 +14,8 @@ import '../modules/profile/bindings/profile_binding.dart';
 import '../modules/profile/views/profile_view.dart';
 import '../modules/splash/bindings/splash_binding.dart';
 import '../modules/splash/views/splash_view.dart';
+import '../modules/travelbooking/bindings/travelbooking_binding.dart';
+import '../modules/travelbooking/views/travelbooking_view.dart';
 
 part 'app_routes.dart';
 
@@ -57,6 +59,11 @@ class AppPages {
       name: _Paths.NOTIFICATION_SETTING,
       page: () => const NotificationSettingView(),
       binding: NotificationSettingBinding(),
+    ),
+    GetPage(
+      name: _Paths.TRAVELBOOKING,
+      page: () => const TravelbookingView(),
+      binding: TravelbookingBinding(),
     ),
   ];
 }

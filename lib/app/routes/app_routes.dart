@@ -10,6 +10,7 @@ abstract class Routes {
   static const PROFILE = _Paths.PROFILE;
   static const CHATBOT = _Paths.CHATBOT;
   static const NOTIFICATION_SETTING = _Paths.NOTIFICATION_SETTING;
+  static const TRAVELBOOKING = _Paths.TRAVELBOOKING;
 }
 
 abstract class _Paths {
@@ -21,4 +22,5 @@ abstract class _Paths {
   static const PROFILE = '/profile';
   static const CHATBOT = '/chatbot';
   static const NOTIFICATION_SETTING = '/notification-setting';
+  static const TRAVELBOOKING = '/travelbooking';
 }

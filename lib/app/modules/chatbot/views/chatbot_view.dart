@@ -20,13 +20,9 @@ class _ChatbotViewState extends State<ChatbotView> {
   @override
   void initState() {
     super.initState();
-
-    // UPDATE:
-    // 1. Changed model to 'gemini-1.0-pro' (Updated name)
-    // 2. Added apiVersion: 'v1' (To avoid v1beta error)
     _model = GenerativeModel(
       model: 'gemini-1.0-pro',
-      apiKey: EndPoint.apiKey.trim(),
+      apiKey: EndPoint.geminiApiKey,
     );
 
     _chat = _model.startChat();

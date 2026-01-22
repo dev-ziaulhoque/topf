@@ -6,7 +6,9 @@ import 'package:get_storage/get_storage.dart';
 import 'package:tophf0_app/app/modules/chatbot/views/chatbot_view.dart';
 import 'package:tophf0_app/app/modules/notification_setting/views/notification_setting_view.dart';
 
+import 'app/app_config/app_config.dart';
 import 'app/data/services/notificaiton_manager.dart';
+import 'app/modules/travelbooking/views/travelbooking_view.dart';
 import 'app/routes/app_pages.dart';
 
 // DevicePreview import
@@ -22,6 +24,7 @@ Future<void> main() async {
 
   /// dotenv
   await dotenv.load(fileName: ".env");
+  AppConfig.init();
 
   runApp(
     DevicePreview(
@@ -33,7 +36,8 @@ Future<void> main() async {
         builder: DevicePreview.appBuilder,
         // initialRoute: AppPages.INITIAL,
         // getPages: AppPages.routes,
-        home: NotificationSettingView(),
+        // home: NotificationSettingView(),
+        home: TravelbookingView(),
       ),
     ),
   );
